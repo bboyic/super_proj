@@ -1,0 +1,149 @@
+body {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 29px;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;;
+}
+
+.header {
+	padding: 15px 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav {
+	position: fixed; 
+    left: 0; bottom: 0; 
+    padding: 10px; 
+    background: #fff; 
+    width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.news{
+	width: 20px;
+}
+.search{
+	width: 20px;
+}
+.rooms{
+	width: 20px;
+}
+.offers{
+	width: 20px;
+}
+.account{
+	width: 20px;
+}
+
+.logo {
+	font-family: 'Rasa';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 49px;
+}
+
+.sotial_items {
+	margin-left: auto;
+}
+
+.message {
+	padding-left: 28px;
+	height: 25px;
+}
+
+.new_post {
+	height: 25px;
+}
+
+.post {
+	margin-bottom: 10px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	width: 100%;
+}
+
+.post_header {
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+}
+
+.user_logo {
+	padding-right: 15px	;
+	width: 30px;
+	height: 30px;
+}
+
+.post_setting {
+	margin-left: auto;
+	height: 25px;
+}
+
+.post_content {
+	padding: 20px 24px;
+	color: #fff;
+	height: 500px;
+	background: url(../src/content1.png) no-repeat center center;
+	background-size: cover;
+}
+
+.sotial_move {
+	width: 40px;
+	text-align: center;
+	margin-left: auto;
+}
+
+.comments {
+	margin-top: 17px;
+}
+
+.user_name {
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 17px;
+	line-height: 29px;
+}
+
+.more {
+	margin-left: 20px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 23px;
+	color: #969696;
+}
+
+.comment {
+	padding: 20px 20px 0px 20px;
+}
+
+.data {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	padding: 10px 20px;
+}
+
+#post_content2 {
+	padding: 20px 24px;
+	color: #fff;
+	height: 400px;
+	background: url(../src/content2.png) no-repeat center center;
+	background-size: cover;
+}
+
