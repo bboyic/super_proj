@@ -100,11 +100,11 @@ p {
 .post_setting {
 	margin-right: 10px;
 	margin-left: auto;
-	height: 25px;
+	height: 15px;
 }
 
 .post_content {
-	padding: 20px 18px;
+	padding: 20px 10px;
 	color: #fff;
 	height: 500px;
 	background: url(../src/content1.png) no-repeat center center;
@@ -158,7 +158,7 @@ p {
 }
 
 #post_content2 {
-	padding: 20px 18px;
+	padding: 20px 10px;
 	color: #fff;
 	height: 400px;
 	background: url(../src/content2.png) no-repeat center center;
