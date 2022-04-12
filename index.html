@@ -35,7 +35,7 @@
 		</div>
 		<div class="post_content" src="src/content1.png">
 			<div class="sotial_move">
-				<img class="likes" src="src/likes.svg">
+				<img id="likes" class="likes" src="src/likes.svg" onclick="setImg(this)" flag="0">
 				<div class="likes_len">256</div>
 				<img class="comments" src="src/comments.svg">
 				<div class="comments_len">493</div>
@@ -55,7 +55,7 @@
 		</div>
 		<div class="post_content" id="post_content2" src="src/content2.png">
 			<div class="sotial_move">
-				<img class="likes" src="src/likes.svg">
+				<img class="likes" src="src/likes.svg" onclick="setImg(this)" flag="0">
 				<div class="likes_len">256</div>
 				<img class="comments" src="src/comments.svg">
 				<div class="comments_len">493</div>
@@ -68,5 +68,6 @@
 		<div class="data">сегодня в 19:42</div>
 	</div>
 	<div class="pre_footer"></div>
+	<script src="js/main.js"></script>
 </body>
 </html>

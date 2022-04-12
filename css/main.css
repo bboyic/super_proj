@@ -18,6 +18,7 @@ p {
 }
 
 .header {
+	padding-top: 7px;
 	background-color: white;  
 	position: fixed;  
 	top: 0;  
@@ -31,7 +32,6 @@ p {
 	position: fixed; 
     left: 0; bottom: 0; 
     padding: 10px;
-	padding-bottom: 30px;
     background: #fff; 
     width: 100%;
 	display: flex;
@@ -58,9 +58,10 @@ p {
 	margin-left: 25px;
 	font-family: 'Rasa';
 	font-style: normal;
-	font-weight: 500;
-	font-size: 30px;
-	line-height: 49px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+
 }
 
 .sotial_items {
@@ -92,15 +93,21 @@ p {
 }
 
 .user_logo {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
 	padding-right: 15px	;
 	width: 30px;
 	height: 30px;
 }
 
 .post_setting {
-	margin-right: 10px;
+	margin-right: 13px;
 	margin-left: auto;
-	height: 15px;
+	width: 4px;
+	height: 20px;
 }
 
 .post_content {
