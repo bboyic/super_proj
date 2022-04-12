@@ -10,8 +10,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Rasa:wght@600&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 	<title>Document</title>
+	<script src="js/main.js"></script>
 </head>
-<body>
+<body onload="def();">
 	<div class="pre_header"></div>
 	<div class="header">
 		<div class="logo">Rooms</div>
@@ -42,9 +43,14 @@
 			</div>
 		</div>
 		<div class="carousel"></div>
-		<p class="comment"><span class="user_name">zarykovskaya</span>    Просто суперски отдохнули в 
-			Сочи, вообще всем советую! Море тёплое, ...</p>
-		<div class="more">далее</div>
+		<div class="comment content_block hide">
+			<span id="view1" style="display: block;">
+			</span>
+		</div>
+		<!-- <p class="comment content_block hide"> -->
+		<div class="content_toggle more" >
+			<a id="continue1" href="javascript:void(0)" onclick="showHide('view1', 'continue1')">далее</a>
+		</div>
 		<div class="data">сегодня в 19:42</div>
 	</div>
 	<div class="post">
@@ -62,9 +68,14 @@
 			</div>
 		</div>
 		<div class="carousel"></div>
-		<p class="comment"><span class="user_name">nelly_astovsky</span>	Погода на чёрном море 
-			сегодня не лётная, но я такое даже люблю ...</p>
-		<div class="more">далее</div>
+		<div class="comment content_block hide">
+			<span id="view2" style="display: block;">
+			</span>
+		</div>
+		<!-- <p class="comment"><span class="user_name">nelly_astovsky</span>	</p> -->
+		<div class="content_toggle more" >
+			<a id="continue2" href="javascript:void(0)" onclick="showHide('view2', 'continue2')">далее</a>
+		</div>
 		<div class="data">сегодня в 19:42</div>
 	</div>
 	<div class="pre_footer"></div>

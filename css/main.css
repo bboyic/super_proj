@@ -132,6 +132,7 @@ p {
 	font-weight: 900;
 	font-size: 17px;
 	line-height: 29px;
+	margin-right: 10px;
 }
 
 .more {
@@ -169,3 +170,34 @@ p {
 	height: 60px;
 }
 
+/*
+DsArmor
+*/
+
+/*---------------------------------------------------------*/
+
+/* .block_id {
+	display: none;
+} */
+
+/* .content_block {
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	height: auto;
+}
+.content_block.hide {
+	height: auto;
+}
+.content_block.hide:after{
+	content: "";
+	display: block;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+} */
+
+/*---------------------------------------------------------*/
