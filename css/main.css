@@ -157,7 +157,7 @@ a {
 }
 
 .comment {
-	padding: 20px 20px 0px 20px;
+	padding: 0px 20px;
 }
 
 .data {
@@ -181,6 +181,73 @@ a {
 	height: 60px;
 }
 
+.carousel {
+	justify-content: center;
+	display: flex;
+}
+
+.dot_active {
+	margin: 15px 5px 5px 5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #000000;
+	border: 1px solid #000000;
+}
+
+.dot {
+	margin: 15px 5px 5px 5px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 1px solid #000000;
+}
+
+/* ROOMS CSS */
+
+.rooms_header {
+	margin: 10px 5px;
+	width: 350px;
+	height: 30px;
+	background: #C4C4C4;
+	border-radius: 5px;
+}
+
+.search_in_rooms {
+	padding: 5px 10px;
+	display: block;
+	margin-left: auto;
+}
+
+.rooms_content {
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px 0px;
+	color: #fff;
+	height: 300px;
+	background: url(../src/rooms_photo.png) no-repeat center center;
+	background-size: cover;
+}
+
+.rooms_item_header {
+	display: flex;
+}
+
+.img_flag {
+	margin-left: 9px;
+}
+
+.country_city {
+	margin-left: 9px;
+}
+
+.rooms_name {
+	margin-top: 230px;
+	width: 360px;
+	height: 35px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/* END ROOMS CSS*/
 /*
 DsArmor
 */

@@ -3,15 +3,17 @@ var i = 0;
 setImg = function (el, chill) {
 	if (el.getAttribute('flag') == '0'){
 		document.getElementById(chill).innerText = "257";
-		el.src = el.src.replace('src/likes.svg', 'src/full_like.png');
+		el.src = el.src.replace('src/likes.svg', 'src/full_like.svg');
 		el.setAttribute('flag', 1);
 	}
 	else {
 		document.getElementById(chill).innerText = "256";
-		el.src = el.src.replace('src/full_like.png', 'src/likes.svg');
+		el.src = el.src.replace('src/full_like.svg', 'src/likes.svg');
 		el.setAttribute('flag', 0);
 	}
 }
+
+// Даниил
 const str = '<span class="user_name">zarykovskaya</span> Просто суперски отдохнули в Сочи, вообще всем советую!...';
 const str1 = '<span class="user_name">zarykovskaya</span> Просто суперски отдохнули в Сочи, вообще всем советую! Жара, море, песок и мноооого новых знакомств';
 const str2 = '<span class="user_name">nelly_astovsky</span> Погода на чёрном море сегодня не лётная, но я такое даже люблю ...';
@@ -59,3 +61,8 @@ function showHide(element_id, hr_id){
 		}
 	}
 }
+
+var prevEl = 0;
+function ToRooms(html) {
+		window.location.href = html;
+	}

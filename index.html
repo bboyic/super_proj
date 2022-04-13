@@ -10,7 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Rasa:wght@600&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 	<title>Document</title>
-	<script src="js/main.js"></script>
 </head>
 <body onload="def();">
 	<div class="pre_header"></div>
@@ -22,11 +21,11 @@
 		</div>
 	</div>
 	<div class="nav">
-		<img class="news" src="src/news.svg">
-		<img class="search" src="src/search.svg">
-		<img class="rooms" src="src/rooms.png">
-		<img class="offers" src="src/offers.svg">
-		<img class="account" src="src/account.svg">
+		<img class="news" src="src/active_news.svg" >
+		<img class="search" src="src/search.svg" onclick="ToRooms('search.html')">
+		<img class="rooms" src="src/rooms.svg" onclick="ToRooms('rooms.html')"> 
+		<img class="offers" src="src/offers.svg" onclick="ToRooms('offers.html')">
+		<img class="account" src="src/account.svg" onclick="ToRooms('account.html')">
 	</div>
 	<div class="post">
 		<div class="post_header">
@@ -42,7 +41,10 @@
 				<div class="comments_len">493</div>
 			</div>
 		</div>
-		<div class="carousel"></div>
+		<div class="carousel">
+			<div class="dot dot_active"></div>
+			<div class="dot"></div>
+		</div>
 		<div class="comment content_block hide">
 			<span id="view1" style="display: block;">
 			</span>
@@ -67,7 +69,10 @@
 				<div class="comments_len">493</div>
 			</div>
 		</div>
-		<div class="carousel"></div>
+		<div class="carousel">
+			<div class="dot dot_active"></div>
+			<div class="dot"></div>
+		</div>
 		<div class="comment content_block hide">
 			<span id="view2" style="display: block;">
 			</span>
