@@ -39,6 +39,7 @@ a {
     background: #fff; 
     width: 100%;
 	display: flex;
+	z-index: 5;
 	justify-content: space-around;
 }
 
@@ -88,6 +89,8 @@ a {
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 	width: 100%;
+	/*Даня*/
+	position: relative;
 }
 
 .post_header {
@@ -125,12 +128,14 @@ a {
 
 .sotial_move {
 	font-size: 13px;
-	width: 40px;
-	padding-top: 10px;
+	padding-top: 65px;
 /* тут мой код */
-	text-align: center;
-	margin-left: auto;
-	position: relative;
+	/* margin-left: auto; */
+	position: absolute;
+	top: 0;
+	right: 10px;
+	z-index: 2;
+	/* position: relative; */
 }
 
 .likes {
@@ -291,40 +296,39 @@ DsArmor
     margin-bottom: 15px;
 } */
 
+.slider {
+	position: relative;
+}
+
 .post_content_img {
-	position: absolute;
     width: 100%;
     height: 100%;
-	/* position: relative; */
-    /* object-fit: cover;	 */
+	z-index: 1;
 }
 
 .slider .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-/* При наведении на кнопки добавляем фон кнопок */
-.slider .prev:hover,
-.slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 /* Кружочки */
 .slider-dots {
-    text-align: center;
+	text-align: center;
+	height: 20px;
 }
 .slider-dots_item{
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+	border: 1px solid;
+	cursor: pointer;
+	height: 8px;
+	width: 8px;
+	margin: 0 2px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 }
 .active,
 .slider-dots_item:hover {
-    background-color: #aaa;
+    background-color: rgb(0, 0, 0);
 }
 /* Анимация слайдов */
 .slider .post_content {

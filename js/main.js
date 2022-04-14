@@ -71,28 +71,32 @@ function ToRooms(html) {
 // -------------------------------------------
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, 'post1');
+showSlides(slideIndex, 'post2');
 
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
 function plusSlide() {
-    showSlides(slideIndex += 1);
+	showSlides(slideIndex += 1);
 }
 
 /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
 function minusSlide() {
-    showSlides(slideIndex -= 1);  
+	showSlides(slideIndex -= 1);  
 }
 
 /* Устанавливает текущий слайд */
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function currentSlide(n, el_id) {
+	showSlides(slideIndex = n, el_id);
 }
 
 /* Основная функция слайдера */
-function showSlides(n) {
+function showSlides(n, el_id) {
 	var i;
-	var slides = document.getElementsByClassName("post_content");
-	var dots = document.getElementsByClassName("slider-dots_item");
+	let parent = document.querySelector('#'+el_id);
+	let slider = parent.querySelector('.slider');
+	let slider_dots = parent.querySelector('.slider-dots');
+	var slides = slider.querySelectorAll('.post_content');
+	var dots = slider_dots.querySelectorAll('.slider-dots_item');
 	if (n > slides.length) {
 		slideIndex = 1
 	}
