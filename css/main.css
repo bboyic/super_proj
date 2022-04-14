@@ -116,6 +116,7 @@ a {
 
 .post_content{
 	/* padding: 20px 10px; */
+	position: relative;
 	color: #fff;
 	height: 500px;
 	/* background: url(../src/content1.png) no-repeat center center; */
@@ -125,8 +126,11 @@ a {
 .sotial_move {
 	font-size: 13px;
 	width: 40px;
+	padding-top: 10px;
+/* тут мой код */
 	text-align: center;
 	margin-left: auto;
+	position: relative;
 }
 
 .likes {
@@ -288,9 +292,10 @@ DsArmor
 } */
 
 .post_content_img {
-	/* position: absolute; */
+	position: absolute;
     width: 100%;
     height: 100%;
+	/* position: relative; */
     /* object-fit: cover;	 */
 }
 
