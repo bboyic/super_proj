@@ -12,24 +12,27 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="rooms_header">
-		<div class="search_header">
+	<!-- <div class="rooms_header"> -->
+		<!-- <div class="search_header">
 			<img class="search_in_rooms" src="src/search_in_rooms.svg" alt="search rooms">
 		</div>
 		<img class="add_rooms" src="src/add_rooms.svg" alt="add rooms">
-	</div>
-	<div class="rooms_item">
-		<div class="rooms_content">
+	</div> -->
+	<div id="rooms_item_aplicated" class="rooms_item">
+		<div id="rooms_content_aplicated" class="rooms_content">
 			<div class="rooms_item_header">
-				<img class="img_flag" src="src/flag.svg" alt="#">
-				<p class="country_city">Дубай</p>
+				<img class="rooms_back" src="src/back.svg" onclick="ToRooms('rooms.html')" >
 				<img class="rooms_post_setting" src="src/white_setting.svg">
 			</div>
 			<div class="rooms_name">
-				<a class="rooms_link" href="rooms_selected.html"> В Дубай на майские</a>
+				<p class="rooms_selected"> В Дубай на майские<p>
 			</div>
 		</div>
 		<div class="rooms_description">
+			<div class="rooms_map">
+				<img class="rooms_small_flag" src="src/small_flag.svg" alt="small flag">
+				<p class="rooms_map_text">Дубай</p>
+			</div>
 			<div class="rooms_hash_tags">
 				<div class="rooms_tag_1">активный отдых</div>
 				<div class="rooms_tag_2">+18</div>
@@ -39,13 +42,18 @@
 				<div class="rooms_tag_6">лыжи</div>
 				<div class="rooms_etc">...</div>
 			</div>
+			<p class="rooms_text">Хотим с друзьями поехать в Дубай на майские, 
+				нашли классный отель и тур по клубам, для тура
+				нужно от 14 человек. Днём планируем проводить
+				время на пляже, возможно выедем за город.
+				Кому интересно кидайте запрос ;)</p>
 			<div class="rooms_people">Доступно 6 мест из 14</div>
 			<div class="rooms_sotial">
 				<img src="src/users.png" alt="users">
 				<div class="rooms_aplication">Отправить запрос</div>
 			</div>
 		</div>
-		<div class="data">сегодня в 19:42</div>
+		<div class="data"><span class="rooms_guser">zarykovskaya</span> сегодня в 19:42</div>
 	</div>
 	<div class="nav">
 		<img class="news" src="src/news.svg" onclick="ToRooms('index.html')" >
