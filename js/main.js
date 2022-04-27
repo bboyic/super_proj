@@ -125,4 +125,13 @@ function hideComment(el_id) {
 	comment[0].style.display = "none";
 }
 
+// function showUnderline(cur, other) {
+// 	let	parent = document.querySelector('direct_title');
+// 	let	message_nav = parent.querySelector('.message_nav');
+// 	var	lol = message_nav.querySelectorAll(cur);
+// 	var	kek = message_nav.querySelectorAll(other);
+// 	lol[0].style.width = kek[0].style.width;
+// 	kek[0].style.width = 0;
+// }
+
 // -------------------------------------------
