@@ -128,12 +128,12 @@ a {
 
 .sotial_move {
 	font-size: 13px;
-	padding-top: 65px;
+	padding-top: 70px;
 /* тут мой код */
 	/* margin-left: auto; */
 	position: absolute;
 	top: 0;
-	right: 10px;
+	right: 20px;
 	z-index: 2;
 	/* position: relative; */
 }
@@ -142,10 +142,23 @@ a {
 	height: 25px;
 }
 
+.likes_len {
+	margin-top: -8px;
+	margin-left: 2px;
+	color: #fff;
+}
+
 .comments {
 	height: 25px;
-	margin-top: 17px;
+	margin-top: 7px;
 }
+
+.comments_len {
+	margin-top: -8px;
+	margin-left: 2px;
+	color: #fff;
+}
+
 
 .user_name {
 	font-family: 'Roboto';
@@ -263,46 +276,13 @@ DsArmor
 
 /*---------------------------------------------------------*/
 
-/* .block_id {
-	display: none;
-} */
-
-/* .content_block {
-	overflow: hidden;
-	position: relative;
-	display: inline-block;
-	height: auto;
-}
-.content_block.hide {
-	height: auto;
-}
-.content_block.hide:after{
-	content: "";
-	display: block;
-	height: 100px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
-} */
-
-
-/* Собственно сам слайдер */
-/* .slider{
-    max-width: 100%;
-    margin: auto;
-    height: 500px;
-    margin-bottom: 15px;
-} */
-
 .slider {
 	position: relative;
 }
 
 .post_content_img {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 	z-index: 1;
 }
 
@@ -328,30 +308,123 @@ DsArmor
 }
 .active,
 .slider-dots_item:hover {
-    background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
 }
 /* Анимация слайдов */
 .slider .post_content {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+	from {
+	    opacity: .4
+	}
+	to {
+	    opacity: 1
+	}
 }
 @keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+	from {
+	    opacity: .4
+	}
+	to {
+	    opacity: 1
+	}
+}
+
+/* для красоты согласно дизайну*/
+
+.user_name {
+	line-height: 20px;
+	margin-right: 5px;
+}
+
+.comment {
+	line-height: 1.2;
+}
+
+/*--------------------------------*/
+
+/*---------------Блок для комментариев-----------------*/
+
+/* нужно отменить возможность скролла и добавить возможность 
+скроллить как раз комменты, также добавить панельку для ввода комментария */
+.post_comments {
+	display: block;
+	position: fixed;
+	overflow: scroll;
+	z-index: 250;
+	background-color: #fff;
+	margin-top: 40%;
+	width: 100%;
+	height: 380px;
+}
+
+.owner {
+	border-bottom: 1px solid rgba(0,0,0,0.52);
+}
+
+.title {
+	display: inline-block;
+	width: 75%;
+	text-align: center;
+	margin-left: 45px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 14px;
+}
+
+.close {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+	float: right;
+}
+
+.comment_header {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.comment_header .user_logo {
+	padding-right: 10px;
+}
+
+.full_comment {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+	margin-left: 50px;
+	margin-top: -10px;
+	margin-right: 19px;
+}
+
+.full_comment .data {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 10px;
+	line-height: 12px;
+	padding-left: 0;
+}
+
+.commentator .bottom .data{
+	display: inline-block;
+	width: 50%;
+}
+
+.commentator .bottom .response{
+	display: inline-block;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: #969696;
 }
 
 

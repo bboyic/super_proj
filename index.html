@@ -36,8 +36,53 @@
 		<div class="sotial_move">
 			<img id="likes" class="likes" src="src/likes.svg" onclick="setImg(this, 'likes_len')" flag="0">
 			<div id="likes_len" class="likes_len">256</div>
-			<img class="comments" src="src/comments.svg">
+			<img class="comments" src="src/comments.svg" onclick="showComment('post1')">
 			<div class="comments_len">493</div>
+		</div>
+		<div class="post_comments">
+			<div class="head">
+				<div class="title">
+					Комментарии
+				</div>
+				<img id="close" class="close" src="src/close.svg" onclick="hideComment('post1')">
+			</div>
+			<div class="owner">
+				<div class="post_header comment_header">
+					<img class="user_logo" src="src/user1.png">
+					<p class="user_name">zarykovskaya</p>
+				</div>
+				<div class="full_comment">
+					Просто суперски отдохнули в Сочи, вообще всем советую! Море тёплое, ветер совсем слабый, что редкость в это время года.
+					<br>Очень удобно, что у нашего отеля был свой пляж и не надо было искать место, ещё и шизлог бесплатный)
+					<div class="data">сегодня в 19:42</div>
+				</div>
+			</div>
+			<div class="commentator">
+				<div class="post_header comment_header">
+					<img class="user_logo" src="src/comment_user.svg">
+					<p class="user_name">dasha_dasha</p>
+				</div>
+				<div class="full_comment">
+					Говорят там на побережье часто выбрасывает медуз, которые могут жалить, это правда?
+					<div class="bottom">
+						<div class="data">сегодня в 19:45</div>
+						<div class="response">Ответить</div>
+					</div>
+				</div>
+			</div>
+			<div class="commentator">
+				<div class="post_header comment_header">
+					<img class="user_logo" src="src/comment_user2.svg">
+					<p class="user_name">dasha_dasha</p>
+				</div>
+				<div class="full_comment">
+					Волшебный закат, уже хочу туда о.о
+					<div class="bottom">
+						<div class="data">сегодня в 19:45</div>
+						<div class="response">Ответить</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="slider">
 			<div class="post_content">
@@ -46,20 +91,15 @@
 			<div class="post_content">
 				<img class="post_content_img" src="src/content2.png">
 			</div>
-			<!-- <div class="post_content">
-				<img class="post_content_img" src="src/content2.png">
-			</div> -->
 		</div>
 		<div class="slider-dots">
 			<span class="slider-dots_item" onclick="currentSlide(1, 'post1')"></span> 
 			<span class="slider-dots_item" onclick="currentSlide(2, 'post1')"></span> 
-			<!-- <span class="slider-dots_item" onclick="currentSlide(3)"></span>  -->
 		</div>
 		<div class="comment content_block hide">
 			<span id="view1" style="display: block;">
 			</span>
 		</div>
-		<!-- <p class="comment content_block hide"> -->
 		<div class="content_toggle more" >
 			<a class="more" id="continue1" href="javascript:void(0)" onclick="showHide('view1', 'continue1')">далее</a>
 		</div>

@@ -21,7 +21,7 @@ const str3 = '<span class="user_name">nelly_astovsky</span> Погода на ч
 
 
 function def(){
-	var el = document.getElementById('view1');
+	var	el = document.getElementById('view1');
 	el.innerHTML = str;
 	el = document.getElementById('view2');
 	el.innerHTML = str2;
@@ -41,9 +41,9 @@ function chooseText(hr_id, num)
 }
 
 function showHide(element_id, hr_id){
-	var text;
-	var el = document.getElementById(element_id);
-	var hr = document.getElementById(hr_id);
+	var	text;
+	var	el = document.getElementById(element_id);
+	var	hr = document.getElementById(hr_id);
 
 	if (el) { 
 		if (el.style.display != "inline-block"){
@@ -91,12 +91,12 @@ function currentSlide(n, el_id) {
 
 /* Основная функция слайдера */
 function showSlides(n, el_id) {
-	var i;
-	let parent = document.querySelector('#'+el_id);
-	let slider = parent.querySelector('.slider');
-	let slider_dots = parent.querySelector('.slider-dots');
-	var slides = slider.querySelectorAll('.post_content');
-	var dots = slider_dots.querySelectorAll('.slider-dots_item');
+	var	i;
+	let	parent = document.querySelector('#'+el_id);
+	let	slider = parent.querySelector('.slider');
+	let	slider_dots = parent.querySelector('.slider-dots');
+	var	slides = slider.querySelectorAll('.post_content');
+	var	dots = slider_dots.querySelectorAll('.slider-dots_item');
 	if (n > slides.length) {
 		slideIndex = 1
 	}
@@ -112,4 +112,17 @@ function showSlides(n, el_id) {
 	slides[slideIndex - 1].style.display = "block";
 	dots[slideIndex - 1].className += " active";
 }
+
+function showComment(el_id) {
+	let	parent = document.querySelector('#'+el_id);
+	var	comment = parent.querySelectorAll('.post_comments');
+	comment[0].style.display = "block";
+}
+
+function hideComment(el_id) {
+	let	parent = document.querySelector('#'+el_id);
+	var	comment = parent.querySelectorAll('.post_comments');
+	comment[0].style.display = "none";
+}
+
 // -------------------------------------------
