@@ -14,10 +14,10 @@ setImg = function (el, chill) {
 }
 
 // Даниил
-const str = '<span class="user_name">zarykovskaya</span> Просто суперски отдохнули в Сочи, вообще всем советую!...';
-const str1 = '<span class="user_name">zarykovskaya</span> Просто суперски отдохнули в Сочи, вообще всем советую! Жара, море, песок и мноооого новых знакомств';
-const str2 = '<span class="user_name">nelly_astovsky</span> Погода на чёрном море сегодня не лётная, но я такое даже люблю ...';
-const str3 = '<span class="user_name">nelly_astovsky</span> Погода на чёрном море сегодня не лётная, но я такое даже люблю, ведь именно в такую погоду, открываются картины, которые многие не замечают.';
+const str = '<span class="user_name">zarykovskaya</span>Просто суперски отдохнули в Сочи, вообще всем советую!...';
+const str1 = '<span class="user_name">zarykovskaya</span>Просто суперски отдохнули в Сочи, вообще всем советую! Жара, море, песок и мноооого новых знакомств';
+const str2 = '<span class="user_name">nelly_astovsky</span>Погода на чёрном море сегодня не лётная, но я такое даже люблю ...';
+const str3 = '<span class="user_name">nelly_astovsky</span>Погода на чёрном море сегодня не лётная, но я такое даже люблю, ведь именно в такую погоду, открываются картины, которые многие не замечают.';
 
 
 function def(){
