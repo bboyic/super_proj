@@ -703,8 +703,6 @@ DsArmor
 	line-height: 19px;
 	flex-basis: 70%;
 }
-.user_in_direct {
-}
 
 .shipped {
 	background-color: #D8D8D8;
@@ -726,3 +724,133 @@ DsArmor
 	/* padding-left: 5px; */
 }
 
+/*-----------------Account--------------------*/
+
+.account_short {
+	padding-top: 7px;
+	background-color: white;  
+	position: fixed;  
+	top: 0;  
+	z-index: 100;  
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.account_logo {
+	margin-left: 20px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+.account_items {
+	padding-top: 5px;
+	margin-right: 15px;
+	margin-left: auto;
+}
+
+.profile_head {
+	width: 100%;
+	text-align: center;
+}
+
+.account_info {
+	padding-top: 7px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.info {
+	width: 100px;
+}
+
+.nums {
+	text-align: center;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.naming {
+	text-align: center;
+	margin-top: 5px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #969696;
+}
+
+.ac_wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.rewrite {
+	padding-top: 5px;
+	padding-bottom: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: fit-content;
+	margin-top: 11px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	border: 1px solid #969696;
+	border-radius: 5px;
+}
+
+.ac_text {
+	margin-left: 20px;
+	margin-right: 65px;
+	margin-top: 15px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.text {
+
+}
+
+.ac_text .more {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #969696;
+	margin-left: 0px;
+}
+
+.ac_tabs {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-top: 18px;
+}
+
+.gal_line {
+	height: 3px;
+	width: 120px;
+	margin-top: 10px;
+	background-color: #000000;
+	border-radius: 5px;
+}
+
+.ac_pre_footer{
+	height: 40px;
+}
