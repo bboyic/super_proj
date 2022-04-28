@@ -39,6 +39,7 @@ a {
     background: #fff; 
     width: 100%;
 	display: flex;
+	z-index: 5;
 	justify-content: space-around;
 }
 
@@ -88,6 +89,8 @@ a {
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 	width: 100%;
+	/*Даня*/
+	position: relative;
 }
 
 .post_header {
@@ -114,29 +117,48 @@ a {
 	height: 20px;
 }
 
-.post_content {
-	padding: 20px 10px;
+.post_content{
+	/* padding: 20px 10px; */
+	position: relative;
 	color: #fff;
 	height: 500px;
-	background: url(../src/content1.png) no-repeat center center;
-	background-size: cover;
+	/* background: url(../src/content1.png) no-repeat center center; */
+	/* background-size: cover; */
 }
 
 .sotial_move {
 	font-size: 13px;
-	width: 40px;
-	text-align: center;
-	margin-left: auto;
+	padding-top: 70px;
+/* тут мой код */
+	/* margin-left: auto; */
+	position: absolute;
+	top: 0;
+	right: 20px;
+	z-index: 2;
+	/* position: relative; */
 }
 
 .likes {
 	height: 25px;
 }
 
+.likes_len {
+	margin-top: -8px;
+	margin-left: 2px;
+	color: #fff;
+}
+
 .comments {
 	height: 25px;
-	margin-top: 17px;
+	margin-top: 7px;
 }
+
+.comments_len {
+	margin-top: -8px;
+	margin-left: 2px;
+	color: #fff;
+}
+
 
 .user_name {
 	font-family: 'Roboto';
@@ -430,28 +452,283 @@ DsArmor
 
 /*---------------------------------------------------------*/
 
-/* .block_id {
-	display: none;
-} */
-
-/* .content_block {
-	overflow: hidden;
+.slider {
 	position: relative;
+}
+
+.post_content_img {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* Кружочки */
+.slider-dots {
+	text-align: center;
+	height: 20px;
+}
+.slider-dots_item{
+	border: 1px solid;
+	cursor: pointer;
+	height: 8px;
+	width: 8px;
+	margin: 0 2px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
 	display: inline-block;
-	height: auto;
+	transition: background-color 0.6s ease;
 }
-.content_block.hide {
-	height: auto;
+.active,
+.slider-dots_item:hover {
+	background-color: rgb(0, 0, 0);
 }
-.content_block.hide:after{
+/* Анимация слайдов */
+.slider .post_content {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {
+	    opacity: .4
+	}
+	to {
+	    opacity: 1
+	}
+}
+@keyframes fade {
+	from {
+	    opacity: .4
+	}
+	to {
+	    opacity: 1
+	}
+}
+
+/* для красоты согласно дизайну*/
+
+.user_name {
+	line-height: 20px;
+	margin-right: 5px;
+}
+
+.comment {
+	line-height: 1.2;
+}
+
+/*--------------------------------*/
+
+/*---------------Блок для комментариев-----------------*/
+
+/* нужно отменить возможность скролла и добавить возможность 
+скроллить как раз комменты, также добавить панельку для ввода комментария */
+
+.post_comments {
+	display: none;
+	position: fixed;
+	overflow: scroll;
+	z-index: 250;
+	background-color: #fff;
+	margin-top: 40%;
+	width: 100%;
+	height: 380px;
+}
+
+.owner {
+	border-bottom: 1px solid rgba(0,0,0,0.52);
+}
+
+.title {
+	display: inline-block;
+	width: 75%;
+	text-align: center;
+	margin-left: 45px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 14px;
+}
+
+.close {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+	float: right;
+}
+
+.comment_header {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.comment_header .user_logo {
+	padding-right: 10px;
+}
+
+.full_comment {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 16px;
+	line-height: 19px;
+	margin-left: 50px;
+	margin-top: -10px;
+	margin-right: 19px;
+}
+
+.full_comment .data {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 10px;
+	line-height: 12px;
+	padding-left: 0;
+}
+
+.commentator .bottom .data{
+	display: inline-block;
+	width: 50%;
+}
+
+.commentator .bottom .response{
+	display: inline-block;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: #969696;
+}
+
+
+/*---------------------------------------------------------*/
+
+/*---------------------Direct-------------------------------*/
+
+.direct {
+	padding-top: 0;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+.top_nav {
+	width: 400px;
+	margin-top: 5px;
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+.exit_arrow {
+	height: fit-content;
+	margin-left: 15px;
+	margin-top: 1px;
+	flex-basis: 75%;
+}
+
+.finder {
+	margin-right: 20px;
+	/* flex-basis: 10%; */
+}
+
+.notes {
+	margin-right: 20px;
+	/* flex-basis: 10%; */
+	/* align-self: flex-end; */
+}
+
+.direct_title {
+	position: relative;
+}
+
+.message_nav {
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.message_nav .my {
+	width: 138px;
+	text-align: center;
+}
+
+.message_nav .all {
+	width: 138px;
+	text-align: center;
+}
+
+.beautiful {
+	display: inline-block;
+	position: relative;
+	transition: all 0.4s ease;
+	padding-bottom: 5px;
+}
+
+.my::after {
 	content: "";
-	display: block;
-	height: 100px;
 	position: absolute;
-	left: 0;
-	right: 0;
+	height: 2px;
+	background-color: #000000;
+	width: 100%;
+	left: 50%;
 	bottom: 0;
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
-} */
+	transform: translateX(-50%);
+	transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.dir_win {
+	margin-top: 16px;
+	border-top: 1px solid #D8D8D8;
+}
+
+.chel {
+	display: flex;
+	margin: auto;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.buddy .user_logo {
+	width: 50px;
+	height: 50px;
+}
+
+.brief {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	flex-basis: 70%;
+}
+.user_in_direct {
+}
+
+.shipped {
+	background-color: #D8D8D8;
+}
+
+.read {
+	background-color: #FFFFFF;
+}
+
+.answer {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	margin-top: 5px;
+	height: 15px;
+	padding: 5px;
+	/* padding-left: 5px; */
+}
 
 /*---------------------------------------------------------*/
