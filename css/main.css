@@ -800,7 +800,7 @@ DsArmor
 	padding-left: 20px;
 	padding-right: 20px;
 	width: fit-content;
-	margin-top: 11px;
+	margin-top: 15px;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
@@ -841,6 +841,10 @@ DsArmor
 	padding-left: 50px;
 	padding-right: 50px;
 	margin-top: 18px;
+}
+
+.line {
+	margin-bottom: 5px;
 }
 
 .gal_line {
