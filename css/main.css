@@ -863,3 +863,69 @@ DsArmor
 .ac_pre_footer{
 	height: 40px;
 }
+
+/* offers */
+
+.offers_header {
+	display: flex;
+}
+
+.search_offers {
+	margin: 10px 10px 10px 10px;
+	width: 100%;
+	height: 30px;
+	background: #C4C4C4;
+	border-radius: 5px;
+}
+
+.search_in_offers {
+	padding: 5px 10px;
+	display: block;
+	margin-left: auto;
+}
+
+.offers_desc {
+	margin: 5px 0px 0px 10px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.offers_data {
+	padding: 5px 0px 7px 10px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.offers_content {
+	border-radius: 10px 15px 0px 0px;
+	padding: 20px 0px;
+	color: #fff;
+	height: 250px;
+	background: url(../src/dubai.png) no-repeat center center;
+	background-size: cover;
+}
+
+.offers_name {
+	margin-top: 206px;
+	width: 100%;
+	height: 35px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.offers_tag_1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 180px;
+	width: 55px;
+	height: 22px;
+	box-sizing: border-box;
+	background: #FF9473;
+	border-radius: 15px;
+}
