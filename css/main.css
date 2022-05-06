@@ -929,3 +929,148 @@ DsArmor
 	background: #FF9473;
 	border-radius: 15px;
 }
+
+/* --Search-- */
+
+.search_body {
+	position: relative;
+}
+
+.search_header_search {
+	height: 70px;
+	text-align: center;
+}
+
+.search_header_search img {
+	padding-top: 10px;
+}
+
+.search_body .rooms_item {
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.search_body .rooms_item .img:first-child {
+	margin-left: 15px;
+}
+
+.king_royalty {
+	padding-left: 11px;
+	display: flex;
+	color: #000000;
+}
+
+.king_royalty div {
+	padding-left: 6px;
+	margin-top: 6px;
+}
+
+.king_royalty div:last-child {
+	padding-left: 5px;
+	color: #969696;
+}
+
+.king_royalty img {
+	padding-top: 5px;
+	height: 25px;
+}
+
+.king_bookmarks {
+	padding-top: 10px;
+	padding-right: 20px;
+}
+
+.search_desc {
+	margin: 10px 0px 0px 10px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.search_price {
+	padding: 5px 0px 7px 10px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.search_price span {
+	font-weight: 300;
+}
+
+.search_content_1 {
+	position: absolute;
+	top: 0;
+	border-radius: 10px 15px 0px 0px;
+	padding-top: 10px;
+	color: #fff;
+	width: 100%;
+	background-size: cover;
+}
+
+.search_content_1 .rooms_item_header {
+	z-index: 200;
+	width: 100%;
+}
+
+.search_content_1 .rooms_item_header img:last-child {
+	padding: 0;
+	margin: 0;
+
+	padding-left: 20px;
+	margin-top: 2px;
+}
+
+.search_name {
+	border-radius: 0px 0px 10px 10px;
+	margin-top: -10px;
+	width: 100%;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.search_name .rooms_link {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	text-decoration-line: underline;
+	color: #000000;
+}
+
+.search_name .above {
+	display: flex;
+	margin-bottom: 11px;
+	justify-content: space-between;
+	color: #000000;
+}
+
+.search_tag_1 {
+	margin-top: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 181px;
+	width: 55px;
+	height: 22px;
+	box-sizing: border-box;
+	background: #FF9473;
+	border-radius: 15px;
+}
+
+.search_tag_2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 180px;
+	width: 55px;
+	height: 22px;
+	box-sizing: border-box;
+	background: #6268FF;
+	border-radius: 15px;
+}
