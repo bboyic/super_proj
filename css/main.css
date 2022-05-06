@@ -955,6 +955,7 @@ DsArmor
 }
 
 .king_royalty {
+	padding-top: 5px;
 	padding-left: 11px;
 	display: flex;
 	color: #000000;
